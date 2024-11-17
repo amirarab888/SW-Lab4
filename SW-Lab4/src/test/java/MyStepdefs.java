@@ -9,17 +9,17 @@ import org.junit.Assert;
 
 public class MyStepdefs {
     private Calculator calculator;
-    private int value1;
-    private int value2;
-    private int result;
+    private double value1;
+    private double value2;
+    private double result;
 
     @Before
     public void before() {
         calculator = new Calculator();
     }
 
-    @Given("Two input values, {int} and {int}")
-    public void twoInputValuesAnd(int arg0, int arg1) {
+    @Given("Two input values, {double} and {double}")
+    public void twoInputValuesAnd(double arg0, double arg1) {
         value1 = arg0;
         value2 = arg1;
     }
@@ -29,8 +29,8 @@ public class MyStepdefs {
         result = calculator.add(value1, value2);
     }
 
-    @Then("I expect the result {int}")
-    public void iExpectTheResult(int arg0) {
-        Assert.assertEquals(arg0, result);
+    @Then("I expect the result {double}")
+    public void iExpectTheResult(double arg0) {
+        Assert.assertEquals(arg0, result, 0.1);
     }
 }

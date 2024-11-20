@@ -29,8 +29,18 @@ public class MyStepdefs {
         result = calculator.add(value1, value2);
     }
 
-    @Then("I expect the result {double}")
+    @Then("I expect the result {double} for add")
     public void iExpectTheResult(double arg0) {
+        Assert.assertEquals(arg0, result, 0.1);
+    }
+
+    @When("I multiple the two values")
+    public void iMultipleTheTwoValues() {
+        result = calculator.mul(value1, value2);
+    }
+
+    @Then("I expect the result {double} for mul")
+    public void iExpectTheResultForMul(double arg0) {
         Assert.assertEquals(arg0, result, 0.1);
     }
 }

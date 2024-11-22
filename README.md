@@ -15,7 +15,17 @@
 1. جمع دو عدد
 2. تفریق دو عدد
 3. ضرب دو عدد
+
+![image](https://github.com/user-attachments/assets/0176de7a-b428-4100-b61c-cc86f81e22ee)
+
 4. تقسیم دو عدد (به همراه مدیریت خطای تقسیم بر صفر)
+
+![image](https://github.com/user-attachments/assets/a7d73d33-40f6-4a00-861a-44850491e84b)
+
+5. لاگین کاربر
+
+![image](https://github.com/user-attachments/assets/9bcd3740-9b15-44e2-b9db-0b224fe31edf)
+
 
 ## فناوری‌های مورد استفاده
 
@@ -41,6 +51,7 @@
 2. تفریق دو عدد
 3. ضرب دو عدد
 4. تقسیم دو عدد و بررسی خطای تقسیم بر صفر
+5. لاگین کاربر
 
 ## نحوه اجرای پروژه
 
@@ -55,3 +66,14 @@
 
 * تمامی تست‌ها برای عملیات جمع، تفریق، ضرب و تقسیم به صورت کامل و بدون خطا اجرا شدند.
 * استفاده از BDD منجر به بهبود ارتباط بین اعضای تیم و شفافیت در پیاده‌سازی تست‌ها شد.
+
+* ![image](https://github.com/user-attachments/assets/a5a8b296-3ba1-4057-a5b4-9e42834d5c94)
+
+* ![image](https://github.com/user-attachments/assets/248a16b4-6397-4d9a-80a8-e3baea07aa46)
+
+* ![image](https://github.com/user-attachments/assets/3c4a64d6-b01a-4020-9643-13f3666bfcd5)
+
+* تصاویری از بورد
+* ![image](https://github.com/user-attachments/assets/5b0148d7-cf02-4292-80f7-9977e348dfe9)
+* ![image](https://github.com/user-attachments/assets/91db4660-0c59-4194-9ff6-86fbe0d7c4b9)
+

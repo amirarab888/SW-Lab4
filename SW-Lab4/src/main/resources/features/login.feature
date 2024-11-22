@@ -3,7 +3,7 @@ Feature: User Login
   Scenario Outline: login user with valid username and password
     Given user "ali" with password "1234"
     And another user "reza" with password "abcd"
-    When <username> tries to login with password <password>
+    When "<username>" tries to login with password "<password>"
     Then login result is "<result>"
 
     Examples:

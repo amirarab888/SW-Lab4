@@ -7,12 +7,39 @@ import io.cucumber.java.Before;
 
 import org.junit.Assert;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MyStepdefs {
     private Calculator calculator;
     private double value1;
     private double value2;
     private double result;
     private String errorMessage;
+    private Map<String, String> userDatabase = new HashMap<>();
+    private boolean loginResult;
+
+    @Given("user {string} with password {string}")
+    public void givenUserWithPassword(String username, String password) {
+        userDatabase.put(username, password);
+    }
+
+    @Given("another user {string} with password {string}")
+    public void givenAnotherUserWithPassword(String username, String password) {
+        userDatabase.put(username, password);
+    }
+
+    @When("{string} tries to login with password {string}")
+    public void whenUserTriesToLoginWithPassword(String username, String password) {
+        String storedPassword = userDatabase.get(username);
+        loginResult = storedPassword != null && storedPassword.equals(password);
+    }
+
+    @Then("login result is {string}")
+    public void thenLoginResultIs(String expectedResult) {
+        boolean expected = Boolean.parseBoolean(expectedResult);
+        Assert.assertEquals(expected, loginResult);
+    }
 
     @Before
     public void before() {

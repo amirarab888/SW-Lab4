@@ -55,3 +55,6 @@
 
 * تمامی تست‌ها برای عملیات جمع، تفریق، ضرب و تقسیم به صورت کامل و بدون خطا اجرا شدند.
 * استفاده از BDD منجر به بهبود ارتباط بین اعضای تیم و شفافیت در پیاده‌سازی تست‌ها شد.
+* ![image](https://github.com/user-attachments/assets/b255ac0e-5b67-4703-bea9-21d47fe286ef)
+* ![image](https://github.com/user-attachments/assets/915b4a72-e60f-4f10-aa66-7743932e46c1)
+
